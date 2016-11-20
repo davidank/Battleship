@@ -84,3 +84,73 @@
 //   Buttons:
 //    Select Red player
 //    Select Blue player
+
+
+//////////////////////////////////////////////////////////
+// Message Data
+
+// endpoint-url: ./player/gameBoard/hit
+//
+// POST message
+//
+// purpose: send the coordinates of hit attemp to server
+//
+// message = {
+//   coordinates: [x, y]
+// }
+//
+// ////////////////////////////////
+// endpoint-url: ./player/gameBoard/init
+//
+// POST message
+//
+// purpose: send placement of ships to server
+//
+// message = {};
+//
+// message.ships = {};
+//
+// message.ships.[shipName] = {}
+//
+// message.ship.[shipName][shipNum] = {
+//   verticle: true/false,
+//   coordinate: [x,y]
+// }
+//
+//
+// ////////////////////////////////
+//
+// endpoint-url: ./player/gameBoard/check
+//
+// GET message
+//
+//
+// message = {
+//   enemyGrid: [matrix],
+//   ownGrid: [matrix],
+//   ownShips: {
+//     carrier: 0-5,
+//     battleship: 0-4,
+//     cruiser: 0-3,
+//     destroyer: 0-2
+//   },
+//   enemyShips: {
+//     carrier: 0-5,
+//     battleship: 0-4,
+//     cruiser: 0-3,
+//     destroyer: 0-2
+//   },
+//   playerTurn: true/false,
+//   winCondition: true/false,
+// }
+//
+// enemyGrid matrix data for each 'box':
+// 0 -> not checked
+// 1 -> checked but no hit
+// 2 -> checked and hit enemy ship
+//
+// ownGrid matrix data for each 'box':
+// 0 -> enemy did not check
+// 1 -> enemy did check but missed your ship
+// 2 -> enemy hit your ship
+// 3 -> your ship
