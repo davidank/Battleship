@@ -57,10 +57,12 @@
 // Use React component structure to present game state
 //
 // Components:
-//   Board:
-//     Box
-//     ownGrid
-//     hitGrid
+//   GameBoard:
+//     hitGrid:
+//       Row x 10:
+//         Box x 10
+//     ownGrid(same as hitGrid)
+//
 //   Ships:
 //     Carrier(5 boxes)
 //     Battleship(4 boxes)

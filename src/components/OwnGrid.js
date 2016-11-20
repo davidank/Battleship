@@ -5,6 +5,7 @@ class OwnGrid extends Component {
   render() {
     return (
       <div className='ownGrid'>
+        <div className='gridTitle'>Player Grid</div>
         <Row />
         <Row />
         <Row />
