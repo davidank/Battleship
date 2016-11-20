@@ -57,28 +57,30 @@
 // Use React component structure to present game state
 //
 // Components:
+// App:
 //   GameBoard:
 //     hitGrid:
 //       Row x 10:
 //         Box x 10
 //     ownGrid(same as hitGrid)
 //
-//   Ships:
-//     Carrier(5 boxes)
-//     Battleship(4 boxes)
-//     Cruiser(3 boxes)
-//     Submarine(3 boxes)
-//     Destroyer(2 boxes)
-//   ShipPlacement UI:
-//     button: toggle for verticle/horizonal align
-//     Ships: A varient of ships component that allow for placement on board
-//     by drag and drop
-//     placementStatus: displays the status of player placement
-//       if not all pieces are placed: informs player to place remaining ships
-//       if all pieces are placed: informs player to standby for enemy ship placement
+// Ships:
+//   Carrier(5 boxes)
+//   Battleship(4 boxes)
+//   Cruiser(3 boxes)
+//   Submarine(3 boxes)
+//   Destroyer(2 boxes)
 //
+// ShipPlacement UI:
+//   button: toggle for verticle/horizonal align
+//   Ships: A varient of ships component that allow for placement on board
+//   by drag and drop
+//   placementStatus: displays the status of player placement
+//     if not all pieces are placed: informs player to place remaining ships
+//     if all pieces are placed: informs player to standby for enemy ship placement
+//
+// Menu:
+//   Before game starts a container to hold select player Buttons
 //   Buttons:
-//     Select Red player
-//     Select Blue player
-//   Menu:
-//     Before game starts a container to hold select player Buttons
+//    Select Red player
+//    Select Blue player

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Box extends Component {
   render() {
     return (
-      <span className="box">X</span>
+      <span className="box"></span>
     );
   }
 }
