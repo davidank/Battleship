@@ -10,7 +10,12 @@ class Grid extends Component {
     return (
       <div className='grid'>
         <div className='gridTitle'>{this.props.title}</div>
-        { _(10).times(i => <Row key={i} row={this.props.matrix[i]}/>) }
+        { _(10).times(i => <Row
+          key={i}
+          row={this.props.matrix[i]}
+          rowNum={i}
+          submitPos={this.props.submitPos}
+        />) }
       </div>
     );
   }

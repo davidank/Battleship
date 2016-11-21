@@ -6,7 +6,12 @@ class Row extends Component {
   render() {
     return (
       <div className='row'>
-        { _(10).times(i => <Box key={i} status={this.props.row[i]}/>) }
+        { _(10).times(i => <Box
+          key={i}
+          status={this.props.row[i]}
+          pos={[i,this.props.rowNum]}
+          submitPos={this.props.submitPos}
+        />) }
       </div>
     );
   }

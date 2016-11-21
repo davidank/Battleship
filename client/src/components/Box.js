@@ -2,26 +2,6 @@ import React, { Component } from 'react';
 import * as V  from '../lib/values';
 
 class Box extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     hit: this.props.value=== 1,
-  //     occupied: this.props.value === 2,
-  //     missed: this.props.value === 3
-  //   }
-  // }
-
-  // hit() {
-  //   this.setState({hit: true});
-  // }
-  //
-  // missed() {
-  //   this.setState({missed: true});
-  // }
-  //
-  // occupy() {
-  //   this.setState({occupied: true});
-  // }
 
   render() {
     let content;
@@ -35,7 +15,13 @@ class Box extends Component {
     }
 
     return (
-      <div className='box'>{content}</div>
+      <div className='box' onClick={() => {
+        if (this.props.submitPos !== undefined) {
+          this.props.submitPos(this.props.pos);
+        } else {
+          console.log('cannot send guess on own board');
+        }
+      }}>{content}</div>
     );
   }
 }

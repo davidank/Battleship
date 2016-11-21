@@ -1,0 +1,16 @@
+{
+  "name": "battle-ship-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd client && npm install && npm build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=6.7.0"
+  },
+  "author": "Louis <louispvb@gmail.com>, David <>",
+  "license": "ISC"
+}
