@@ -23,6 +23,37 @@
   to { transform: rotate(360deg); }
 }
 
+#placerUI {
+  border: 4px solid black;
+  width: 340px;
+  height: 380px;
+  padding: 5px 20px 20px 20px;
+}
+
+#placerTitle {
+  padding-right: 25px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+#placerContainer {
+  border: 2px solid black;
+  width: 330px;
+  height: 320px
+}
+
+.ship {
+  height: 45px;
+  padding-top: 20px;
+}
+
+.ship:hover {
+  background-color: #456fb2;
+  color: white;
+}
+
 .grid {
   border: 4px solid black;
   width: 350px;
