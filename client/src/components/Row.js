@@ -8,6 +8,7 @@ class Row extends Component {
       <div className='row'>
         { _(10).times(i => <Box
           key={i}
+          playerTurn={this.props.playerTurn}
           status={this.props.row[i]}
           pos={[i,this.props.rowNum]}
           submitPos={this.props.submitPos}
