@@ -17,3 +17,7 @@ npm-debug.log
 #floobits
 .floo
 .flooignore
+
+# webpack output
+bundle.js
+bundle.js.map
